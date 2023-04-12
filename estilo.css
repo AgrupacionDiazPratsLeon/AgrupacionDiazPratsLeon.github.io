@@ -1,0 +1,294 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+.cont-header {
+    display: flex;
+    background-color: #5252f5;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: #ffffff;
+}
+
+.cont-header>h1 {
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+.cont-header>h1>a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+i {
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+i:hover {
+    background-color: #ffffff;
+    color: #5252f5;
+
+}
+
+#cerrar {
+    display: none;
+    font-size: 25px;
+}
+
+.nav-resposive {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-color: #5252f528;
+    display: none;
+
+}
+
+.cont-lista {
+    display: flex;
+    flex-direction: column;
+    background-color: #5252f5;
+}
+
+.cont-lista>li {
+    list-style: none;
+    padding: 30px;
+    font-weight: 600;
+}
+
+.cont-lista>li>a {
+    text-decoration: none;
+    padding: 5px;
+    background-color: #5252f5;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.cont-lista>li>a:hover {
+    background-color: #ffffff;
+    color: #5252f5;
+
+}
+
+.los-candidatos {
+    padding: 5px 0px;
+    box-shadow: 0px 0px 10px #5252f5;
+}
+
+.los-candidatos>img {
+    width: 100%;
+    box-shadow: 0px 2px 10px #5252f5;
+}
+
+.candidatos {
+    background-image: url(img/viviana.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    text-align: center;
+}
+
+.title-boton {
+    padding: 5px;
+    color: aliceblue;
+    background-color: #0f0f4169;
+    border-radius: 5px;
+
+}
+
+.title-boton>h3 {
+    font-weight: 300;
+}
+
+.actualidad {
+    text-align: center;
+    padding: 30px;
+}
+
+.article {
+    display: flex;
+    text-align: center;
+    padding: 30px;
+    background-color: #a5a5a541;
+    font-size: 20px;
+
+}
+
+/* img {
+    width: 100vw;
+} */
+
+.cont-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 20vh;
+    text-align: center;
+    padding: 20px 0px;
+    background-color: #5252f5;
+
+}
+
+.cont-footer>h4 {
+    font-size: 13px;
+}
+
+.contacts>a>i {
+    margin: 20px;
+    font-size: 35px;
+    padding: 10px;
+    border-radius: 50%;
+    color: #ffffff;
+
+}
+
+.contacts>a>i:hover {
+    background: #270081;
+
+}
+
+.cont-slider {
+    margin: 20px;
+    padding: 10px;
+    background-color: #5252f536;
+    border-radius: 5px;
+}
+
+.seccion-img {
+    display: flex;
+    overflow: scroll;
+}
+
+.seccion-img::-webkit-scrollbar {
+    width: 0px;
+    height: 10px;
+}
+
+.seccion-img::-webkit-scrollbar-thumb {
+    background-color: #5252f5;
+    border-radius: 5px;
+
+}
+
+
+.seccion-img>img {
+    width: 100%;
+    margin: 2px;
+    object-fit: cover;
+
+}
+
+
+.title-parrafo {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding: 10px 5px;
+}
+
+
+.text-oculto {
+    display: none;
+}
+
+.mostrar_comentario {
+    display: block;
+}
+
+.mostrar-text {
+    height: 30px;
+    width: 50%;
+    margin: 5px auto;
+    border: none;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: #5252f5;
+    color: #ffffff;
+    box-shadow: 0px 0px 5px #270081;
+}
+
+.bio {
+    position: relative;
+    min-height: 70vh;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 20px;
+    background-color: #5252f528;
+
+}
+
+
+@media screen and (min-width:600px) {
+    .cont-header {
+        padding: 20px 40px;
+    }
+
+    .cont-lista {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .candidatos {
+        margin: 0px 10%;
+        height: 700px;
+
+    }
+
+    .article {
+        padding: 20px 10%;
+        font-size: 30px;
+    }
+
+    img {
+        width: 70vw;
+    }
+
+    .cont-footer>h4 {
+        font-size: 20px;
+    }
+
+    .bio {
+        padding: 10%;
+    }
+
+    .cont-comunidad {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+
+
+    }
+
+    .cont-slider {
+        width: 300px;
+
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .cont-comunidad {
+
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
