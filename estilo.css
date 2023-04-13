@@ -292,7 +292,7 @@ i:hover {
 
 @media screen and (min-width:1000px) {
     .cont-header {
-        aling-items:center;
+        align-items:center;
         height: 55vh;
         background-position: top;
     }
