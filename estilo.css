@@ -89,6 +89,13 @@ i:hover {
 
 }
 
+.publicidad{
+    position: sticky;
+    top:0%;  
+}
+.publicidad>img{
+    width: 100%;
+}
 
 .candidatos {
     background-image: url(img/viviana.jpg);
